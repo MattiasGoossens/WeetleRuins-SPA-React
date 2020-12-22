@@ -1,24 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import { Layout, Menu } from 'antd';
+import Start from "./components/Start"
+import Dynmap from "./components/Dynmap"
+
+const { Header, Content, Footer } = Layout;
 
 function App () {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout className="layout">
+      <Header style={{ height: "100px", position: 'fixed', zIndex: 1, width: '100%' }}>
+        <div className="logo" />
+        <Menu theme="light" mode="horizontal" defaultSelectedKeys={['2']}>
+        </Menu>
+      </Header>
+      <Content>
+        <Start />
+        <Dynmap />
+      </Content>
+      <Footer style={{ textAlign: 'center' }}>Made by Weetis :)</Footer>
+    </Layout >
   );
 }
 
