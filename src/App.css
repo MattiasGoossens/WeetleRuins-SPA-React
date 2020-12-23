@@ -43,3 +43,22 @@
   padding: 0;
   background: #ffffff;
 }
+
+.whitemountains {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+}
+
+@media (max-width: 699px) {
+  .whitemountains--lg {
+    display: none;
+  }
+}
+
+@media (min-width: 700px) {
+  .whitemountains--sm {
+    display: none;
+  }
+}
