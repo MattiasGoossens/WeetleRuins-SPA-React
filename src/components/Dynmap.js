@@ -1,6 +1,7 @@
 import { Row, Col, Typography, Button } from 'antd';
 import { GlobalOutlined } from '@ant-design/icons';
 
+
 const { Title } = Typography;
 
 const url = "http://155.94.210.195:8123/"
